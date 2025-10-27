@@ -6,11 +6,11 @@ window.projects = [
     title: "Food Delivery Platform",
     subtitle: "Full-stack food ordering solution with real-time inventory and secure payments.",
     images: [
-      "../pic/Screenshot (10).png",
-      "../pic/Screenshot (16).png"
+      "pic/Screenshot-10.png",
+      "pic/Screenshot-16.png"
     ],
     description:
-      "A complete full-stack food delivery platform with features like real-time inventory management, secure payments, and admin dashboard. It’s built for scalability and performance, offering a seamless user experience from browsing to checkout.",
+      "A complete full-stack food delivery platform with features like real-time inventory management, secure payments, and an admin dashboard. It’s built for scalability and performance, offering a seamless user experience from browsing to checkout.",
     tech: ["React", "Node.js", "MySQLi", "PHP"],
     details: [
       "User-friendly interface with intuitive order flow.",
@@ -28,11 +28,11 @@ window.projects = [
     title: "Wedding Website Template",
     subtitle: "Responsive wedding event site with RSVP integration and gallery section.",
     images: [
-      "../pic/Screenshot (13).png",
-      "../pic/Screenshot (19).png"
+      "pic/Screenshot-13.png",
+      "pic/Screenshot-19.png"
     ],
     description:
-      "A beautifully designed wedding website template built to showcase wedding details, photos, and event information. It includes RSVP functionality, countdown timer, and elegant animations for a perfect romantic theme.",
+      "A beautifully designed wedding website template built to showcase wedding details, photos, and event information. It includes RSVP functionality, a countdown timer, and elegant animations for a perfect romantic theme.",
     tech: ["Vue.js", "Firebase", "Tailwind CSS"],
     details: [
       "Clean and elegant design perfect for weddings.",
@@ -50,8 +50,8 @@ window.projects = [
     title: "Food Delivery Admin Dashboard",
     subtitle: "Interactive admin dashboard with analytics and live inventory updates.",
     images: [
-      "../pic/Screenshot (11).png",
-      "../pic/Screenshot (17).png"
+      "pic/Screenshot-11.png",
+      "pic/Screenshot-17.png"
     ],
     description:
       "An intuitive admin dashboard designed to monitor and control food delivery operations. It offers charts, live statistics, and real-time data updates to help admins manage orders, users, and performance efficiently.",
@@ -72,8 +72,8 @@ window.projects = [
     title: "News Magazine Template",
     subtitle: "Analytics-driven news layout with real-time engagement tracking.",
     images: [
-      "../pic/Screenshot (12).png",
-      "../pic/Screenshot (22).png"
+      "pic/Screenshot-12.png",
+      "pic/Screenshot-22.png"
     ],
     description:
       "A news update template with an emphasis on analytics and user engagement. It features a dynamic layout, categorized news sections, and live update components that make it ideal for modern digital news platforms.",
@@ -94,8 +94,8 @@ window.projects = [
     title: "Food Ordering Platform",
     subtitle: "Full-stack food delivery solution with secure payments and live tracking.",
     images: [
-      "../pic/Screenshot (14).png",
-      "../pic/Screenshot (20).png"
+      "pic/Screenshot-14.png",
+      "pic/Screenshot-20.png"
     ],
     description:
       "A scalable food ordering platform offering live tracking and secure payment options. Built with modern tools for speed, reliability, and easy management of food vendors and users.",
@@ -116,8 +116,8 @@ window.projects = [
     title: "The Solar System",
     subtitle: "Dynamic and futuristic view of the Solar System built with CSS animations.",
     images: [
-      "../pic/Screenshot (15).png",
-      "../pic/Screenshot (21).png"
+      "pic/Screenshot-15.png",
+      "pic/Screenshot-21.png"
     ],
     description:
       "A 3D-style animated visualization of the Solar System built purely with CSS and HTML. It demonstrates creative front-end animation, interactivity, and smooth performance without JavaScript frameworks.",
