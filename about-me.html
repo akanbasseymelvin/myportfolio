@@ -9,97 +9,120 @@
 
   <body>
     <!-- ======== HEADER / NAVBAR (reuse from index.html) ======== -->
-<header role="banner">
-  <nav class="container" role="navigation" aria-label="Main navigation">
-    <div class="logo">
-      <span><a href="index.html">Melvin.</a></span>
-    </div>
+    <header role="banner">
+      <nav class="container" role="navigation" aria-label="Main navigation">
+        <div class="logo">
+          <span><a href="index.html">Melvin.</a></span>
+        </div>
 
-    <!-- Hamburger Icon -->
-    <div class="hamburger" id="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+        <!-- Hamburger Icon -->
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
 
-    <!-- Navigation Links -->
-    <ul class="nav-links" id="navLinks">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="index.html#projects">Projects</a></li>
-      <li><a href="index.html#certificates">Certificates</a></li>
-      <li><a href="index.html#skills">Skills</a></li>
-      <li><a href="index.html#contact">Contact Me</a></li>
-    </ul>
+        <!-- Navigation Links -->
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#certificates">Certificates</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="index.html#contact">Contact Me</a></li>
+        </ul>
 
-    <!-- Overlay -->
-    <div class="overlay" id="overlay"></div>
-  </nav>
-</header>
+        <!-- Overlay -->
+        <div class="overlay" id="overlay"></div>
+      </nav>
+    </header>
+
+    <!-- WhatsApp floating button -->
+    <a
+      id="whatsapp-button"
+      class="whatsapp-fab"
+      href="https://wa.me/09018232175?text=Hello%20Mel!%20I%20found%20your%20portfolio%20and%20would%20like%20to%20chat."
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Open WhatsApp chat"
+    >
+      <!-- Inline WhatsApp SVG (keeps styling predictable) -->
+      <svg
+        viewBox="0 0 24 24"
+        width="22"
+        height="22"
+        aria-hidden="true"
+        focusable="false"
+      >
+        <path
+          fill="currentColor"
+          d="M20.5 3.5A11.9 11.9 0 0012 .5 11.9 11.9 0 003.5 3.5 11.9 11.9 0 00.5 12c0 2.1.55 4.05 1.6 5.8L.1 23.5l5.1-1.35A11.9 11.9 0 0012 23.5a11.9 11.9 0 009.5-5.5A11.9 11.9 0 0023.5 12 11.9 11.9 0 0020.5 3.5zM12 21a9 9 0 01-4.75-1.34l-.34-.2-3.03.8.8-2.95-.2-.34A9 9 0 1112 21zm5.17-6.5c-.29-.15-1.73-.86-2-.96-.27-.1-.47-.15-.67.15-.2.29-.77.96-.95 1.16-.17.2-.34.22-.63.07-.29-.15-1.21-.45-2.3-1.4-.85-.76-1.43-1.7-1.6-1.99-.17-.29-.02-.44.13-.59.13-.13.29-.34.44-.51.14-.17.19-.29.29-.48.1-.19.03-.37-.02-.52-.05-.15-.67-1.62-.92-2.22-.24-.57-.48-.49-.67-.5l-.57-.01c-.19 0-.5.07-.77.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.06 2.88 1.2 3.08.14.2 2.06 3.34 4.99 4.68 2.93 1.33 2.93.89 3.46.83.53-.06 1.73-.7 1.98-1.38.25-.68.25-1.26.18-1.38-.07-.12-.27-.19-.57-.34z"
+        />
+      </svg>
+    </a>
 
     <!-- ==================== ABOUT HERO SECTION ==================== -->
     <section id="about-hero" class="py-10">
       <div class="container about-hero-container">
         <div class="about-text">
-          <h2>About Me</h2>
+          <h2>About Me:</h2>
           <p>
-            I'm Mel, a passionate and detail-oriented software developer focused on
-            building elegant, high-performance digital experiences. I specialize in
-            full-stack web development, turning ideas into clean, functional code that
-            speaks for itself.
+            Hi, I'm Melvin. I'm a software developer, and I absolutely love my
+            job. For me, it's all about building things. Taking a cool idea and
+            turning it into a website or app that's not just functional, but
+            actually a pleasure to use. I dig into the details, making sure
+            every part of the experience, from the look of the-front end to the
+            logic in the back-end, is clean, solid, and works just right.
           </p>
           <p>
-            My journey started with curiosity and has evolved into a deep love for
-            crafting modern, user-friendly interfaces and robust backend systems.
-            Every project I take on reflects my drive for growth, creativity, and
-            clean design.
+            My journey in tech started with a simple "I wonder how that works?"
+            That curiosity has grown into a full-blown passion for building
+            modern, user-friendly tools. I'm always learning, always growing,
+            and always excited about the next creative challenge.
           </p>
-          <a href="cv.pdf" class="btn" download>Download Resume</a>
+          <p>Do you have a problem I could solve? Send me a DM. Let us chat!</p>
+          <div class="about-hero-btn">
+            <a
+              id="whatsapp-button"
+              class="btn btn-primary"
+              href="https://wa.me/09018232175?text=Hello%20Mel!%20I%20found%20your%20portfolio%20and%20would%20like%20to%20chat."
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open WhatsApp chat"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                width="22"
+                height="22"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path
+                  fill="green"
+                  d="M20.5 3.5A11.9 11.9 0 0012 .5 11.9 11.9 0 003.5 3.5 11.9 11.9 0 00.5 12c0 2.1.55 4.05 1.6 5.8L.1 23.5l5.1-1.35A11.9 11.9 0 0012 23.5a11.9 11.9 0 009.5-5.5A11.9 11.9 0 0023.5 12 11.9 11.9 0 0020.5 3.5zM12 21a9 9 0 01-4.75-1.34l-.34-.2-3.03.8.8-2.95-.2-.34A9 9 0 1112 21zm5.17-6.5c-.29-.15-1.73-.86-2-.96-.27-.1-.47-.15-.67.15-.2.29-.77.96-.95 1.16-.17.2-.34.22-.63.07-.29-.15-1.21-.45-2.3-1.4-.85-.76-1.43-1.7-1.6-1.99-.17-.29-.02-.44.13-.59.13-.13.29-.34.44-.51.14-.17.19-.29.29-.48.1-.19.03-.37-.02-.52-.05-.15-.67-1.62-.92-2.22-.24-.57-.48-.49-.67-.5l-.57-.01c-.19 0-.5.07-.77.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.06 2.88 1.2 3.08.14.2 2.06 3.34 4.99 4.68 2.93 1.33 2.93.89 3.46.83.53-.06 1.73-.7 1.98-1.38.25-.68.25-1.26.18-1.38-.07-.12-.27-.19-.57-.34z"
+                />
+              </svg>
+              Let's chat!
+            </a>
+            <a
+              href="MY-RESUME.pdf"
+              class="btn btn-secondary"
+              style="color: white"
+              download
+              >Download Resume</a
+            >
+          </div>
         </div>
 
-        <div class="about-image glass-panel">
-          <img src="jp" alt="Mel - Software Developer" />
+        <div class="hero-avatar">
+          <div class="avatar-wrapper">
+            <!-- Avatar placeholder SVG -->
+            <img src="1761050801765.jpg" alt="" />
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ==================== SKILLS SECTION ==================== -->
-    <section id="skills" class="py-10">
-      <div class="container">
-        <div class="section-header">
-          <h2>Technical Skills</h2>
-          <p>A blend of creativity, logic, and innovation across the stack</p>
-        </div>
-
-        <div class="skills-grid">
-          <div class="skill-card glass-panel">
-            <h3>Frontend Development</h3>
-            <p>HTML, CSS, JavaScript, React, Responsive Design</p>
-          </div>
-          <div class="skill-card glass-panel">
-            <h3>Backend Development</h3>
-            <p>PHP, Node.js, Express, REST APIs</p>
-          </div>
-          <div class="skill-card glass-panel">
-            <h3>Database Management</h3>
-            <p>MySQL, MongoDB, Firebase</p>
-          </div>
-          <div class="skill-card glass-panel">
-            <h3>Version Control</h3>
-            <p>Git, GitHub, CI/CD Workflows</p>
-          </div>
-          <div class="skill-card glass-panel">
-            <h3>UI/UX Design</h3>
-            <p>Figma, Wireframing, User Flow Optimization</p>
-          </div>
-          <div class="skill-card glass-panel">
-            <h3>Deployment</h3>
-            <p>Netlify, Vercel, cPanel</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==================== PERSONAL STATS SECTION ==================== -->
+        <!-- ==================== PERSONAL STATS SECTION ==================== -->
     <section id="stats" class="py-10">
       <div class="container">
         <div class="section-header">
@@ -109,7 +132,7 @@
 
         <div class="stats-grid">
           <div class="stat-card glass-panel">
-            <h3>3+</h3>
+            <h3>4+</h3>
             <p>Years of Experience</p>
           </div>
           <div class="stat-card glass-panel">
@@ -117,7 +140,7 @@
             <p>Completed Projects</p>
           </div>
           <div class="stat-card glass-panel">
-            <h3>5+</h3>
+            <h3>20+</h3>
             <p>Certifications Earned</p>
           </div>
           <div class="stat-card glass-panel">
@@ -128,10 +151,159 @@
       </div>
     </section>
 
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <div class="thirdpage">
+      <div class="section-header skillss">
+        <h2>Coding Skills & Strength</h2>
+        <p>A blend of creativity, logic, and innovation across the stack.</p>
+      </div>
+
+      <div class="timeline">
+        <!-- ITEM 1 -->
+        <div class="item glass-panel">
+          <div class="year">
+            <span>2022–<br />Present</span>
+          </div>
+          <div class="content">
+            <h3 class="title">Python Programming</h3>
+            <p class="subtitle">Entrylevel Virtual Experience Program.</p>
+            <p class="story">
+              Learned <mark>Python Programming</mark> 2022 – 2023.<br />
+              Built automation, analysis, and web apps demonstrating practical
+              Python knowledge.
+            </p>
+          </div>
+        </div>
+
+        <!-- ITEM 2 -->
+        <div class="item reverse glass-panel">
+          <div class="year">
+            <span>2024–<br />Present</span>
+          </div>
+          <div class="content">
+            <h3 class="title">Web Development</h3>
+            <p class="subtitle">
+              National Institute of Information Technology (NIIT)
+            </p>
+            <p class="story">
+              <mark>Freelance Web Developer</mark> 2024 – Present.<br />
+              Designed responsive websites with HTML, CSS, JavaScript, and PHP
+              Frameworks.
+            </p>
+          </div>
+        </div>
+
+        <!-- ITEM 3 -->
+        <div class="item glass-panel">
+          <div class="year">
+            <span>2024–<br />Present</span>
+          </div>
+          <div class="content">
+            <h3 class="title">UI/UX</h3>
+            <p class="subtitle">FreeCodeCamp.org</p>
+            <p class="story">
+              Designed UI/UX using <mark>Figma</mark>, <mark>Adobe XD</mark>,
+              and <mark>Sketch</mark>.
+            </p>
+          </div>
+        </div>
+
+        <!-- ITEM 4 -->
+        <div class="item reverse glass-panel">
+          <div class="year">
+            <span>2025–<br />Present</span>
+          </div>
+          <div class="content">
+            <h3 class="title">Database Management</h3>
+            <p class="subtitle">BurningIce Tech</p>
+            <p class="story">
+              <mark>Freelance</mark> (June – Present).<br />
+              Built functional <mark>admin panels</mark> and databases to add
+              restaurants, foods and manage orders of a food delivery website.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <ul
+      class=""
+      id=""
+      style="
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+        list-style: none;
+      "
+    >
+      <li>
+        <a
+          href="./"
+          class="btn btn-primary"
+          style="color: black; padding: 0.5rem 4rem"
+          >← Back to Home</a
+        >
+      </li>
+    </ul>
+
     <!-- ==================== FOOTER ==================== -->
-    <footer>
-      <div class="container footer-content">
-        <p>© 2025 MelDev — All Rights Reserved.</p>
+    <footer role="contentinfo" style="padding-bottom: 2.5rem">
+      <div class="container">
+        <p>&copy; <span id="currentYear">2025</span>. All rights reserved.</p>
+        <ul class="social-links">
+          <li>
+            <a
+              href="https://github.com/akanbasseymelvin"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/melvin-akan-bassey-458873300/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/heeismelvin/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="white"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+                role="img"
+              >
+                <path
+                  d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm5 6.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7zm4.75-3.25a.875.875 0 11-1.75 0 .875.875 0 011.75 0z"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </footer>
 

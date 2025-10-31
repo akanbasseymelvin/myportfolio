@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Anton&family=Barlow:wght@200;400&family=Bebas+Neue&family=Cedarville+Cursive&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Manrope:wght@200..800&family=Ojuju:wght@200..800&family=Oswald&family=Playwrite+GB+J+Guides:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial&family=Quicksand:wght@300&family=Raleway:ital,wght@0,500;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 /* ==================== CSS VARIABLES ==================== */
 :root {
   --bg: #0a0a0a;
@@ -43,16 +46,17 @@
   height: var(--size);
   display: inline-grid;
   place-items: center;
-  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
   color: #fff;
   border-radius: 50%;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
   z-index: 1100;
   text-decoration: none;
   transform: translateY(0);
-  transition: transform 200ms var(--transition), box-shadow 200ms var(--transition), opacity 200ms var(--transition);
+  transition: transform 200ms var(--transition),
+    box-shadow 200ms var(--transition), opacity 200ms var(--transition);
   opacity: 0.98;
-  border: 1px solid rgba(255,255,255,0.06);
+  border: 1px solid rgba(255, 255, 255, 0.06);
   backdrop-filter: blur(6px);
 }
 
@@ -60,12 +64,15 @@
 .whatsapp-fab:hover,
 .whatsapp-fab:focus {
   transform: translateY(-6px);
-  box-shadow: 0 18px 40px rgba(0,0,0,0.45);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
   outline: none;
 }
 
 /* SVG inherits color */
-.whatsapp-fab svg { color: white; display: block; }
+.whatsapp-fab svg {
+  color: white;
+  display: block;
+}
 
 /* Pulse animation to draw attention (respects reduced motion) */
 @media (prefers-reduced-motion: no-preference) {
@@ -78,28 +85,43 @@
     height: calc(var(--size) * 0.9);
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(37,211,102,0.18) 0%, transparent 50%);
+    background: radial-gradient(
+      circle,
+      rgba(37, 211, 102, 0.18) 0%,
+      transparent 50%
+    );
     animation: whatsapp-pulse 2.4s ease-out infinite;
     pointer-events: none;
   }
 
   @keyframes whatsapp-pulse {
-    0% { transform: translate(-50%, -50%) scale(0.7); opacity: 0.9; }
-    60% { transform: translate(-50%, -50%) scale(1.15); opacity: 0.08; }
-    100% { transform: translate(-50%, -50%) scale(1.4); opacity: 0; }
+    0% {
+      transform: translate(-50%, -50%) scale(0.7);
+      opacity: 0.9;
+    }
+    60% {
+      transform: translate(-50%, -50%) scale(1.15);
+      opacity: 0.08;
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1.4);
+      opacity: 0;
+    }
   }
 }
 
 /* Accessible focus ring */
 .whatsapp-fab:focus {
-  box-shadow: 0 0 0 4px rgba(18,140,126,0.12), 0 10px 30px rgba(0,0,0,0.35);
+  box-shadow: 0 0 0 4px rgba(18, 140, 126, 0.12),
+    0 10px 30px rgba(0, 0, 0, 0.35);
 }
 
 /* Hide on very small screens (optional) */
 @media (max-width: 340px) {
-  .whatsapp-fab { display: none; }
+  .whatsapp-fab {
+    display: none;
+  }
 }
-
 
 /* ==================== RESET & BASE ==================== */
 * {
@@ -337,7 +359,7 @@ nav {
   color: var(--white-muted);
   font-weight: 500;
   position: relative;
-  padding: 0.5rem 0;
+  padding: 0.2rem 0;
 }
 
 .nav-links a::after {
@@ -367,6 +389,20 @@ nav {
     gap: 1rem;
     font-size: 0.9rem;
   }
+
+  .about-hero-btn {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-secondary {
+    margin-top: 0.3rem !important;
+  }
+}
+
+.about-hero-btn {
+  display: flex;
+  gap: 0.5rem;
 }
 
 /* ==================== HERO SECTION ==================== */
@@ -572,8 +608,6 @@ section {
     img {
       width: 90% !important;
     }
-
-    
   }
 
   .nav-btn {
@@ -611,7 +645,8 @@ section {
   gap: 2rem;
 }
 
-.project-data, .certificate-card {
+.project-data,
+.certificate-card {
   cursor: pointer;
   padding: 2rem;
   transition: var(--transition);
@@ -628,7 +663,15 @@ section {
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 4%;
+  gap: 4%; 
+
+  img {
+    border-radius: 10px;
+  }
+
+  h3 {
+    margin: 1rem 0;
+  }
 }
 
 .project-card:focus {
@@ -680,7 +723,8 @@ section {
   z-index: 1000;
   padding: 2rem;
   overflow-y: auto;
-  align-items: center;
+  align-items: flex-end;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -694,7 +738,7 @@ section {
   background: var(--bg-elevated);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 3rem;
+  padding: 1rem !important;
   position: relative;
   box-shadow: 0 16px 64px var(--shadow);
   animation: modalSlideIn 0.3s ease-out;
@@ -766,6 +810,19 @@ section {
   gap: 2rem;
 }
 
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+
+  .skill-card {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
 .skill-category {
   padding: 2rem;
 }
@@ -806,6 +863,45 @@ section {
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
+.about-hero-container {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 3rem;
+  margin-top: 4rem;
+  padding: 0 4rem;
+
+  .about-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    h2 {
+      margin-bottom: 0.2em;
+    }
+  }
+
+  p {
+    font-size: 0.9em;
+    font-family: "Quicksand";
+  }
+
+  a {
+    margin-top: 1rem;
+    color: black;
+    width: fit-content;
+  }
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+
+  .stat-card {
+    padding: 2rem;
+  }
+}
+
 /* ==================== CONTACT SECTION ==================== */
 .contact-wrapper {
   display: grid;
@@ -816,6 +912,37 @@ section {
 @media (max-width: 768px) {
   .contact-wrapper {
     grid-template-columns: 1fr;
+  }
+
+  .about-hero-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 7rem;
+    padding: 2.5rem;
+
+    .about-text {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      align-items: center;
+
+      p {
+        text-align: center;
+      }
+
+      h2 {
+        margin-bottom: 1rem;
+        font-size: 2.2rem;
+      }
+    }
+
+    a {
+      margin-top: 2rem;
+      color: black;
+      width: fit-content;
+    }
   }
 }
 
@@ -974,4 +1101,170 @@ footer p {
 
 .skill-progress {
   animation: skillLoad 1.5s ease-out;
+}
+
+
+
+/* THIRDPAGE */
+.thirdpage {
+  color: white;
+  padding: 120px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  width: 100%;
+}
+
+.section-header.skillss {
+  margin: 0 2rem;
+}
+
+/* Timeline Container */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+/* Timeline Item Base */
+.item {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 3.5rem 3rem;
+  border-radius: 10px;
+  border: none;
+}
+
+.item.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Year Box */
+.year {
+  width: 450px;
+  border: 1px solid #ffffff3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 0;
+}
+
+.year span {
+  font-size: 1.4em;
+  padding-left: 50px;
+}
+
+.item.reverse .year span {
+  border-left: none;
+  padding-left: 0;
+  padding-right: 50px;
+}
+
+.item.reverse .year {
+  border-right: 5px solid white;
+  border-left: 1px solid #ffffff3d;
+}
+
+.item .year {
+  border-left: 5px solid white;
+}
+
+/* Content Section */
+.content {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-size: 1.2em;
+  color: #ffffffc8;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 12px;
+}
+
+.story {
+  font-size: 0.95em;
+  width: 500px;
+  color: #fefae0b3;
+  line-height: 1.6em;
+}
+
+mark {
+  background: transparent;
+  color: white;
+}
+
+/* ------------------- RESPONSIVE DESIGN ------------------- */
+
+@media (max-width: 1100px) {
+  .year {
+    width: 300px;
+  }
+  .story {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .item,
+  .item.reverse {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 3rem 2rem;
+  }
+
+  .year {
+    width: 100%;
+    border-left: 4px solid white;
+    padding-left: 20px;
+  }
+
+  .item.reverse .year {
+    border-right: 4px solid white;
+    border-left: none;
+    text-align: right;
+    padding-right: 20px;
+  }
+
+  .item.reverse .year {
+  border-right: 4px solid white;
+  border-left: 1px solid #ffffff3d;
+}
+
+  .year span {
+    border: none;
+    padding: 0;
+  }
+
+  .content {
+    width: 90%;
+  }
+
+  .section-title div {
+    padding: 20px 40px;
+    font-size: 1.7em;
+  }
+}
+
+@media (max-width: 520px) {
+  .section-title div {
+    width: 220px;
+    font-size: 1.4em;
+    text-align: center;
+  }
+
+  .content .title {
+    font-size: 1.5em;
+  }
 }

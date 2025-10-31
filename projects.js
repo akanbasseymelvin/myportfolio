@@ -19,8 +19,8 @@ window.projects = [
       "Responsive and optimized for mobile devices.",
       "Admin dashboard for product, order, and user management."
     ],
-    repo: "https://github.com/yourusername/project1",
-    live: "https://project1.demo"
+    repo: "https://github.com/akanbasseymelvin/foodie-express",
+    live: "https://github.com/akanbasseymelvin/foodie-express"
   },
 
   {
@@ -41,8 +41,8 @@ window.projects = [
       "Responsive layout for desktop and mobile.",
       "Easily customizable color palette and typography."
     ],
-    repo: "https://github.com/yourusername/project2",
-    live: "https://project2.demo"
+    repo: "https://github.com/akanbasseymelvin",
+    live: "https://github.com/akanbasseymelvin"
   },
 
   {
@@ -63,8 +63,8 @@ window.projects = [
       "Clean dashboard layout with charts and widgets.",
       "Optimized for both desktop and tablet devices."
     ],
-    repo: "https://github.com/yourusername/project3",
-    live: "https://project3.demo"
+    repo: "https://github.com/akanbasseymelvin/foodie-express",
+    live: "https://github.com/akanbasseymelvin/foodie-express"
   },
 
   {
@@ -85,8 +85,8 @@ window.projects = [
       "Optimized caching and database queries.",
       "Fully responsive and clean UI design."
     ],
-    repo: "https://github.com/yourusername/project4",
-    live: "https://project4.demo"
+    repo: "https://github.com/akanbasseymelvin",
+    live: "https://github.com/akanbasseymelvin"
   },
 
   {
@@ -107,8 +107,8 @@ window.projects = [
       "Modern responsive interface with minimal design.",
       "Full backend setup for restaurant management."
     ],
-    repo: "https://github.com/yourusername/project5",
-    live: "https://project5.demo"
+    repo: "https://github.com/akanbasseymelvin",
+    live: "https://github.com/akanbasseymelvin"
   },
 
   {
@@ -129,7 +129,7 @@ window.projects = [
       "Lightweight, framework-free design.",
       "Educational and visually engaging project."
     ],
-    repo: "https://github.com/yourusername/project6",
-    live: "https://project6.demo"
+    repo: "https://github.com/akanbasseymelvin/solar-system-explorer-in-css-only",
+    live: "https://akanbasseymelvin.github.io/solar-system-explorer-in-css-only/"
   }
 ];
