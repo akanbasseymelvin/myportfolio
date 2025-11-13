@@ -36,7 +36,7 @@
     <!-- ==================== HEADER ==================== -->
     <header role="banner">
       <nav class="container" role="navigation" aria-label="Main navigation">
-        <div class="logo">
+        <div class="logo nav-left">
           <span><a href="index.html">Melvin.</a></span>
         </div>
 
@@ -50,16 +50,23 @@
         <!-- Navigation Links -->
         <ul class="nav-links" id="navLinks">
           <li><a href="#home">Home</a></li>
+          <li><a href="#about-section">About</a></li>
+
           <li><a href="#projects">Projects</a></li>
-          <li><a href="about-me.html">About Me</a></li>
           <li><a href="#certificates">Certificates</a></li>
           <!-- <li><a href="#contact">Contact</a></li> -->
-          <li>
+          <div class="mobile-resume-btn">
             <a href="MY-RESUME.pdf" download>
               <button class="btn-resume">Download Resume</button>
             </a>
-          </li>
+          </div>
         </ul>
+
+        <div class="nav-right">
+          <a href="MY-RESUME.pdf" download>
+            <button class="btn-resume">Download Resume</button>
+          </a>
+        </div>
 
         <!-- Overlay -->
         <div class="overlay" id="overlay"></div>
@@ -95,10 +102,10 @@
       <div class="container">
         <div class="hero-content">
           <div class="hero-text">
-            <h2>Akan-Bassey Melvin</h2>
+            <h2 class="hidden">Akan-Bassey Melvin</h2>
 
             <!-- Animated multiple job titles -->
-            <div class="tagline-box">
+            <div class="tagline-box hidden">
               <h2 class="tagline active">A Full Stack Developer</h2>
               <h2 class="tagline">A Frontend & Backend Engineer</h2>
               <h2 class="tagline">A UI/UX Designer</h2>
@@ -106,19 +113,62 @@
               <h2 class="tagline">A Tech Enthusiast</h2>
             </div>
 
-            <p>
+            <p class="hidden">
               I build thoughtful, modern web experiences that feel seamless and
               perform beautifully. Crafted with clean, scalable code. Contact
               me, let's chat!
             </p>
-            <div class="hero-cta">
-              <a href="#projects" class="btn btn-primary">View Projects</a>
-              <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            <div class="hero-cta hidden">
+              <a href="#projects" class="btn btn-primary hidden btn-one"
+                >View Projects</a
+              >
+              <a href="#contact" class="btn btn-secondary hidden btn-two"
+                >Get in Touch</a
+              >
+            </div>
+
+            <!-- Social Proof -->
+            <div class="flex space-x-6 pt-4 social-proof hidden social-proof">
+              <div class="flex items-center space-x-2 hidden">
+                <svg
+                  class="w-5 h-5 text-primary"
+                  fill="rgb(0, 255, 255)"
+                  viewBox="0 0 20 20"
+                  height="24px"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span class="text-sm text-text-secondary"
+                  >GitHub: 2.5k+ stars</span
+                >
+              </div>
+              <div class="flex items-center space-x-3 hidden">
+                <svg
+                  class="w-5 h-5 text-secondary"
+                  fill="rgb(0, 255, 0)"
+                  .
+                  viewBox="0 0 20 20"
+                  height="24px"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span class="text-sm text-text-secondary"
+                  >Client Satisfaction: 98%</span
+                >
+              </div>
             </div>
           </div>
 
           <div class="hero-avatar">
-            <div class="avatar-wrapper">
+            <div class="avatar-wrapper hidden image-hidden">
               <!-- Avatar placeholder SVG -->
               <img src="1761050801765.jpg" alt="" />
             </div>
@@ -127,20 +177,455 @@
       </div>
     </section>
 
+    <section id="about-section">
+      <div class="about-container">
+        <!-- Text Column -->
+        <div class="about-text">
+          <!-- <div class="about-me-header">
+            ABOUT ME.
+          </div> -->
+          <!-- Status Badge -->
+          <div style="padding-top: 0rem; color: var(--muted)">INTRODUCTION</div>
+          <div class="comp-header hidden">Overview.</div>
+
+          <!-- Heading -->
+          <div class="about-heading hidden">
+            <p>
+              Welcome! I’m <b>Melvin</b>, a software developer passionate about
+              turning ideas into seamless digital experiences. I focus on
+              building websites and applications that are not only functional
+              but also engaging and user-friendly. By combining thoughtful
+              design with clean, efficient code, I aim to create products that
+              solve real problems and leave a lasting impression.
+            </p>
+          </div>
+
+          <!-- Value Propositions -->
+          <div class="about-stats">
+            <div class="stat hidden stat-hidden">
+              <div class="stat-number">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <g id="style=stroke" clip-path="url(#clip0_1_1828)">
+                      <g id="web">
+                        <path
+                          id="vector (Stroke)"
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M10.4425 2.44429C10.0752 3.64002 9.32073 6.25569 8.89915 8.83258C9.99331 9.00921 11.0621 9.12209 12 9.12209C12.9379 9.12209 14.0067 9.00921 15.1009 8.83258C14.6793 6.25569 13.9248 3.64002 13.5575 2.44429C13.0509 2.3624 12.5307 2.31977 12 2.31977C11.4693 2.31977 10.9491 2.3624 10.4425 2.44429ZM15.3337 2.90893C15.737 4.305 16.2958 6.42828 16.6448 8.54737C18.1513 8.23703 19.5727 7.85824 20.605 7.56109C19.4986 5.42102 17.6172 3.74662 15.3337 2.90893ZM21.2129 9.01933C20.1222 9.33683 18.5423 9.76328 16.8594 10.1057C16.9295 10.7564 16.9709 11.3958 16.9709 12C16.9709 12.8816 16.8827 13.8411 16.7445 14.8058C18.759 14.3858 20.6068 13.849 21.5557 13.5575C21.6376 13.0509 21.6802 12.5307 21.6802 12C21.6802 10.959 21.5162 9.95751 21.2129 9.01933ZM21.0911 15.3337C19.9166 15.6729 18.229 16.1219 16.4634 16.4634C16.1219 18.229 15.6729 19.9166 15.3337 21.0911C17.9978 20.1138 20.1138 17.9978 21.0911 15.3337ZM13.5576 21.5557C13.849 20.6068 14.3858 18.759 14.8058 16.7445C13.8411 16.8827 12.8816 16.9709 12 16.9709C11.1184 16.9709 10.1589 16.8827 9.19423 16.7445C9.61421 18.759 10.151 20.6068 10.4425 21.5557C10.9491 21.6376 11.4693 21.6802 12 21.6802C12.5307 21.6802 13.0509 21.6376 13.5576 21.5557ZM8.66629 21.0911C8.32707 19.9166 7.8781 18.229 7.53658 16.4634C5.77099 16.1219 4.08335 15.6729 2.90891 15.3337C3.88622 17.9978 6.00216 20.1138 8.66629 21.0911ZM2.44429 13.5575C3.39316 13.849 5.24101 14.3858 7.25548 14.8058C7.1173 13.8411 7.02907 12.8816 7.02907 12C7.02907 11.3958 7.07048 10.7564 7.14056 10.1057C5.45769 9.76328 3.87779 9.33683 2.78712 9.01933C2.48383 9.95751 2.31977 10.959 2.31977 12C2.31977 12.5307 2.3624 13.0509 2.44429 13.5575ZM3.39504 7.56109C4.42731 7.85824 5.84865 8.23703 7.35522 8.54737C7.70416 6.42827 8.26303 4.305 8.66626 2.90893C6.38282 3.74662 4.50139 5.42102 3.39504 7.56109ZM8.68924 10.3888C8.63137 10.9544 8.59884 11.4968 8.59884 12C8.59884 12.9399 8.71224 14.012 8.88985 15.1102C9.98798 15.2878 11.0601 15.4012 12 15.4012C12.9399 15.4012 14.012 15.2878 15.1102 15.1102C15.2878 14.012 15.4012 12.9399 15.4012 12C15.4012 11.4968 15.3686 10.9544 15.3108 10.3888C14.1776 10.5703 13.0348 10.6919 12 10.6919C10.9652 10.6919 9.82236 10.5703 8.68924 10.3888ZM9.67273 0.991173C10.4243 0.833026 11.2029 0.75 12 0.75C12.7971 0.75 13.5757 0.833026 14.3273 0.991174C18.0108 1.76627 21.0281 4.34097 22.42 7.75174C22.9554 9.06356 23.25 10.4983 23.25 12C23.25 12.7971 23.167 13.5757 23.0088 14.3273C22.0943 18.6736 18.6736 22.0943 14.3273 23.0088C13.5757 23.167 12.7971 23.25 12 23.25C11.2029 23.25 10.4243 23.167 9.67273 23.0088C5.32644 22.0943 1.90572 18.6736 0.991173 14.3273C0.833026 13.5757 0.75 12.7971 0.75 12C0.75 10.4972 1.04509 9.06132 1.58123 7.74866C2.97369 4.33943 5.99026 1.76604 9.67273 0.991173Z"
+                          fill="#004d57"
+                        ></path>
+                      </g>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_1828">
+                        <rect width="24" height="24" fill="white"></rect>
+                      </clipPath>
+                    </defs>
+                  </g>
+                </svg>
+              </div>
+              <div class="stat-label">Web Developer</div>
+            </div>
+            <div class="stat hidden">
+              <div class="stat-number">
+                <svg
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M18.6789 15.9759C18.6789 14.5415 17.4796 13.3785 16 13.3785C14.5206 13.3785 13.3211 14.5415 13.3211 15.9759C13.3211 17.4105 14.5206 18.5734 16 18.5734C17.4796 18.5734 18.6789 17.4105 18.6789 15.9759Z"
+                      fill="#53C1DE"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M24.7004 11.1537C25.2661 8.92478 25.9772 4.79148 23.4704 3.39016C20.9753 1.99495 17.7284 4.66843 16.0139 6.27318C14.3044 4.68442 10.9663 2.02237 8.46163 3.42814C5.96751 4.82803 6.73664 8.8928 7.3149 11.1357C4.98831 11.7764 1 13.1564 1 15.9759C1 18.7874 4.98416 20.2888 7.29698 20.9289C6.71658 23.1842 5.98596 27.1909 8.48327 28.5877C10.9973 29.9932 14.325 27.3945 16.0554 25.7722C17.7809 27.3864 20.9966 30.0021 23.4922 28.6014C25.9956 27.1963 25.3436 23.1184 24.7653 20.8625C27.0073 20.221 31 18.7523 31 15.9759C31 13.1835 26.9903 11.7923 24.7004 11.1537ZM24.4162 19.667C24.0365 18.5016 23.524 17.2623 22.8971 15.9821C23.4955 14.7321 23.9881 13.5088 24.3572 12.3509C26.0359 12.8228 29.7185 13.9013 29.7185 15.9759C29.7185 18.07 26.1846 19.1587 24.4162 19.667ZM22.85 27.526C20.988 28.571 18.2221 26.0696 16.9478 24.8809C17.7932 23.9844 18.638 22.9422 19.4625 21.7849C20.9129 21.6602 22.283 21.4562 23.5256 21.1777C23.9326 22.7734 24.7202 26.4763 22.85 27.526ZM9.12362 27.5111C7.26143 26.47 8.11258 22.8946 8.53957 21.2333C9.76834 21.4969 11.1286 21.6865 12.5824 21.8008C13.4123 22.9332 14.2816 23.9741 15.1576 24.8857C14.0753 25.9008 10.9945 28.557 9.12362 27.5111ZM2.28149 15.9759C2.28149 13.874 5.94207 12.8033 7.65904 12.3326C8.03451 13.5165 8.52695 14.7544 9.12123 16.0062C8.51925 17.2766 8.01977 18.5341 7.64085 19.732C6.00369 19.2776 2.28149 18.0791 2.28149 15.9759ZM9.1037 4.50354C10.9735 3.45416 13.8747 6.00983 15.1159 7.16013C14.2444 8.06754 13.3831 9.1006 12.5603 10.2265C11.1494 10.3533 9.79875 10.5569 8.55709 10.8297C8.09125 9.02071 7.23592 5.55179 9.1037 4.50354ZM20.3793 11.5771C21.3365 11.6942 22.2536 11.85 23.1147 12.0406C22.8562 12.844 22.534 13.6841 22.1545 14.5453C21.6044 13.5333 21.0139 12.5416 20.3793 11.5771ZM16.0143 8.0481C16.6054 8.66897 17.1974 9.3623 17.7798 10.1145C16.5985 10.0603 15.4153 10.0601 14.234 10.1137C14.8169 9.36848 15.414 8.67618 16.0143 8.0481ZM9.8565 14.5444C9.48329 13.6862 9.16398 12.8424 8.90322 12.0275C9.75918 11.8418 10.672 11.69 11.623 11.5748C10.9866 12.5372 10.3971 13.5285 9.8565 14.5444ZM11.6503 20.4657C10.6679 20.3594 9.74126 20.2153 8.88556 20.0347C9.15044 19.2055 9.47678 18.3435 9.85796 17.4668C10.406 18.4933 11.0045 19.4942 11.6503 20.4657ZM16.0498 23.9915C15.4424 23.356 14.8365 22.6531 14.2448 21.8971C15.4328 21.9423 16.6231 21.9424 17.811 21.891C17.2268 22.6608 16.6369 23.3647 16.0498 23.9915ZM22.1667 17.4222C22.5677 18.3084 22.9057 19.1657 23.1742 19.9809C22.3043 20.1734 21.3652 20.3284 20.3757 20.4435C21.015 19.4607 21.6149 18.4536 22.1667 17.4222ZM18.7473 20.5941C16.9301 20.72 15.1016 20.7186 13.2838 20.6044C12.2509 19.1415 11.3314 17.603 10.5377 16.0058C11.3276 14.4119 12.2404 12.8764 13.2684 11.4158C15.0875 11.2825 16.9178 11.2821 18.7369 11.4166C19.7561 12.8771 20.6675 14.4086 21.4757 15.9881C20.6771 17.5812 19.7595 19.1198 18.7473 20.5941ZM22.8303 4.4666C24.7006 5.51254 23.8681 9.22726 23.4595 10.8426C22.2149 10.5641 20.8633 10.3569 19.4483 10.2281C18.6239 9.09004 17.7698 8.05518 16.9124 7.15949C18.1695 5.98441 20.9781 3.43089 22.8303 4.4666Z"
+                      fill="#53C1DE"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <div class="stat-label">React Native Developer</div>
+            </div>
+
+            <div class="stat hidden">
+              <div class="stat-number">
+                <svg
+                  viewBox="0 0 1024 1024"
+                  fill="#adc1cc"
+                  class="icon"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  stroke="#adc1cc"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M512 0C250.733601 0 46.039591 111.952387 46.039591 254.906974v514.053564c0 142.954587 204.69401 254.906974 465.960409 254.906974s465.960409-111.952387 465.960409-254.906974v-514.053564C977.827921 111.952387 773.266399 0 512 0zM125.53241 508.224091c0-20.535645 9.009186-41.07129 26.762583-61.209471 5.696985-6.359426 8.74421-14.176219 9.671626-21.993013 84.792341 52.465261 209.066115 85.057317 350.033381 85.057317 139.642386 0 263.121232-32.062104 347.781084-83.599949 1.589856 6.491914 4.504593 12.586363 9.274162 17.885885 19.475741 21.065597 29.279855 42.528658 29.279856 63.991719 0 82.937508-158.720662 175.414154-386.46759 175.414155S125.53241 591.161599 125.53241 508.224091zM512 79.492819c227.746927 0 386.46759 92.476646 386.46759 175.414155S739.746927 430.453616 512 430.453616 125.53241 337.97697 125.53241 254.906974 284.253073 79.492819 512 79.492819z m0 865.014362C284.253073 944.507181 125.53241 852.030534 125.53241 768.960538c0-20.535645 9.009186-41.07129 26.762583-61.209471 7.41933-8.479234 10.599043-19.210765 9.804114-29.544831 84.792341 52.332773 209.066115 84.924829 349.900893 84.924829 139.112434 0 262.061327-31.797128 346.72118-82.937508 0.529952 8.876698 3.842153 17.753396 10.334066 24.775262 19.475741 21.065597 29.279855 42.528658 29.279856 63.991719 0 83.069996-158.588174 175.546643-386.335102 175.546643z"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <div class="stat-label">Backend Developer</div>
+            </div>
+
+            <div class="stat hidden">
+              <div class="stat-number">
+                <svg
+                  version="1.1"
+                  id="Uploaded to svgrepo.com"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 32 32"
+                  xml:space="preserve"
+                  fill="#000000"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <style type="text/css">
+                      .blueprint_een {
+                        fill: #619892;
+                      }
+                    </style>
+                    <path
+                      class="blueprint_een"
+                      d="M8,9H4v3h4V9z M7,11H5v-1h2V11z M8,13H4v3h4V13z M7,15H5v-1h2V15z M6,17c-1.657,0-3,1.343-3,3 s1.343,3,3,3s3-1.343,3-3S7.657,17,6,17z M6,22c-1.103,0-2-0.897-2-2c0-1.103,0.897-2,2-2s2,0.897,2,2C8,21.103,7.103,22,6,22z M21.646,11.646l0.707,0.707l-2,2l-0.707-0.707L21.646,11.646z M31,4h-1.586l-1.707-1.707c-0.391-0.391-1.023-0.391-1.414,0 L24.586,4H1C0.448,4,0,4.448,0,5v22c0,0.552,0.448,1,1,1h30c0.552,0,1-0.448,1-1V5C32,4.448,31.552,4,31,4z M16,14v4h4l8-8v13H11V9 h10L16,14z M17,14.707L19.293,17H17V14.707z M20.146,16.439l-2.586-2.586L27,4.414L29.586,7L20.146,16.439z M2,26V6h22l-2,2H10v16 h19V9l1-1v18H2z"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <div class="stat-label">UI/UX Specialist</div>
+            </div>
+
+            <div class="stat hidden">
+              <div class="stat-number">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      opacity="0.4"
+                      d="M2 12.8799V11.1199C2 10.0799 2.85 9.21994 3.9 9.21994C5.71 9.21994 6.45 7.93994 5.54 6.36994C5.02 5.46994 5.33 4.29994 6.24 3.77994L7.97 2.78994C8.76 2.31994 9.78 2.59994 10.25 3.38994L10.36 3.57994C11.26 5.14994 12.74 5.14994 13.65 3.57994L13.76 3.38994C14.23 2.59994 15.25 2.31994 16.04 2.78994L17.77 3.77994C18.68 4.29994 18.99 5.46994 18.47 6.36994C17.56 7.93994 18.3 9.21994 20.11 9.21994C21.15 9.21994 22.01 10.0699 22.01 11.1199V12.8799C22.01 13.9199 21.16 14.7799 20.11 14.7799C18.3 14.7799 17.56 16.0599 18.47 17.6299C18.99 18.5399 18.68 19.6999 17.77 20.2199L16.04 21.2099C15.25 21.6799 14.23 21.3999 13.76 20.6099L13.65 20.4199C12.75 18.8499 11.27 18.8499 10.36 20.4199L10.25 20.6099C9.78 21.3999 8.76 21.6799 7.97 21.2099L6.24 20.2199C5.33 19.6999 5.02 18.5299 5.54 17.6299C6.45 16.0599 5.71 14.7799 3.9 14.7799C2.85 14.7799 2 13.9199 2 12.8799Z"
+                      fill="#898e94"
+                    ></path>
+                    <path
+                      d="M12 15.25C13.7949 15.25 15.25 13.7949 15.25 12C15.25 10.2051 13.7949 8.75 12 8.75C10.2051 8.75 8.75 10.2051 8.75 12C8.75 13.7949 10.2051 15.25 12 15.25Z"
+                      fill="#898e94"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <div class="stat-label">Content Creator</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tools-section">
+      <div class="comp-header hidden">Essential Tools I use.</div>
+      <div class="tools-desc hidden">
+        Discover the potential tools and technologies i use to create
+        exceptional high-performing websites & applications.
+      </div>
+      <div class="tools-grid">
+        <div class="tool-card glass-panel hidden">
+          <div class="tool-img">
+            <svg
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M18.6789 15.9759C18.6789 14.5415 17.4796 13.3785 16 13.3785C14.5206 13.3785 13.3211 14.5415 13.3211 15.9759C13.3211 17.4105 14.5206 18.5734 16 18.5734C17.4796 18.5734 18.6789 17.4105 18.6789 15.9759Z"
+                  fill="#53C1DE"
+                ></path>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M24.7004 11.1537C25.2661 8.92478 25.9772 4.79148 23.4704 3.39016C20.9753 1.99495 17.7284 4.66843 16.0139 6.27318C14.3044 4.68442 10.9663 2.02237 8.46163 3.42814C5.96751 4.82803 6.73664 8.8928 7.3149 11.1357C4.98831 11.7764 1 13.1564 1 15.9759C1 18.7874 4.98416 20.2888 7.29698 20.9289C6.71658 23.1842 5.98596 27.1909 8.48327 28.5877C10.9973 29.9932 14.325 27.3945 16.0554 25.7722C17.7809 27.3864 20.9966 30.0021 23.4922 28.6014C25.9956 27.1963 25.3436 23.1184 24.7653 20.8625C27.0073 20.221 31 18.7523 31 15.9759C31 13.1835 26.9903 11.7923 24.7004 11.1537ZM24.4162 19.667C24.0365 18.5016 23.524 17.2623 22.8971 15.9821C23.4955 14.7321 23.9881 13.5088 24.3572 12.3509C26.0359 12.8228 29.7185 13.9013 29.7185 15.9759C29.7185 18.07 26.1846 19.1587 24.4162 19.667ZM22.85 27.526C20.988 28.571 18.2221 26.0696 16.9478 24.8809C17.7932 23.9844 18.638 22.9422 19.4625 21.7849C20.9129 21.6602 22.283 21.4562 23.5256 21.1777C23.9326 22.7734 24.7202 26.4763 22.85 27.526ZM9.12362 27.5111C7.26143 26.47 8.11258 22.8946 8.53957 21.2333C9.76834 21.4969 11.1286 21.6865 12.5824 21.8008C13.4123 22.9332 14.2816 23.9741 15.1576 24.8857C14.0753 25.9008 10.9945 28.557 9.12362 27.5111ZM2.28149 15.9759C2.28149 13.874 5.94207 12.8033 7.65904 12.3326C8.03451 13.5165 8.52695 14.7544 9.12123 16.0062C8.51925 17.2766 8.01977 18.5341 7.64085 19.732C6.00369 19.2776 2.28149 18.0791 2.28149 15.9759ZM9.1037 4.50354C10.9735 3.45416 13.8747 6.00983 15.1159 7.16013C14.2444 8.06754 13.3831 9.1006 12.5603 10.2265C11.1494 10.3533 9.79875 10.5569 8.55709 10.8297C8.09125 9.02071 7.23592 5.55179 9.1037 4.50354ZM20.3793 11.5771C21.3365 11.6942 22.2536 11.85 23.1147 12.0406C22.8562 12.844 22.534 13.6841 22.1545 14.5453C21.6044 13.5333 21.0139 12.5416 20.3793 11.5771ZM16.0143 8.0481C16.6054 8.66897 17.1974 9.3623 17.7798 10.1145C16.5985 10.0603 15.4153 10.0601 14.234 10.1137C14.8169 9.36848 15.414 8.67618 16.0143 8.0481ZM9.8565 14.5444C9.48329 13.6862 9.16398 12.8424 8.90322 12.0275C9.75918 11.8418 10.672 11.69 11.623 11.5748C10.9866 12.5372 10.3971 13.5285 9.8565 14.5444ZM11.6503 20.4657C10.6679 20.3594 9.74126 20.2153 8.88556 20.0347C9.15044 19.2055 9.47678 18.3435 9.85796 17.4668C10.406 18.4933 11.0045 19.4942 11.6503 20.4657ZM16.0498 23.9915C15.4424 23.356 14.8365 22.6531 14.2448 21.8971C15.4328 21.9423 16.6231 21.9424 17.811 21.891C17.2268 22.6608 16.6369 23.3647 16.0498 23.9915ZM22.1667 17.4222C22.5677 18.3084 22.9057 19.1657 23.1742 19.9809C22.3043 20.1734 21.3652 20.3284 20.3757 20.4435C21.015 19.4607 21.6149 18.4536 22.1667 17.4222ZM18.7473 20.5941C16.9301 20.72 15.1016 20.7186 13.2838 20.6044C12.2509 19.1415 11.3314 17.603 10.5377 16.0058C11.3276 14.4119 12.2404 12.8764 13.2684 11.4158C15.0875 11.2825 16.9178 11.2821 18.7369 11.4166C19.7561 12.8771 20.6675 14.4086 21.4757 15.9881C20.6771 17.5812 19.7595 19.1198 18.7473 20.5941ZM22.8303 4.4666C24.7006 5.51254 23.8681 9.22726 23.4595 10.8426C22.2149 10.5641 20.8633 10.3569 19.4483 10.2281C18.6239 9.09004 17.7698 8.05518 16.9124 7.15949C18.1695 5.98441 20.9781 3.43089 22.8303 4.4666Z"
+                  fill="#53C1DE"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <div class="tool-content">
+            <span class="one">React</span>
+            <span class="two">Framework</span>
+          </div>
+        </div>
+
+        <div class="tool-card glass-panel hidden">
+          <div class="tool-img">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              aria-label="JavaScript"
+              role="img"
+              viewBox="0 0 512 512"
+              fill="#000000"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <rect width="512" height="512" rx="15%" fill="#f7df1e"></rect>
+                <path
+                  d="M324 370c10 17 24 29 47 29c20 0 33-10 33 -24c0-16 -13 -22 -35 -32l-12-5c-35-15 -58 -33 -58 -72c0-36 27 -64 70 -64c31 0 53 11 68 39l-37 24c-8-15 -17 -21 -31 -21c-14 0-23 9 -23 21c0 14 9 20 30 29l12 5c41 18 64 35 64 76c0 43-34 67 -80 67c-45 0-74 -21 -88 -49zm-170 4c8 13 14 25 31 25c16 0 26-6 26 -30V203h48v164c0 50-29 72 -72 72c-39 0-61 -20 -72 -44z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <div class="tool-content">
+            <span class="one">JavaScript</span>
+            <span class="two">Interaction</span>
+          </div>
+        </div>
+
+        <div class="tool-card glass-panel hidden">
+          <div class="tool-img">
+            <svg
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 512 512"
+              xml:space="preserve"
+              fill="#000000"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  style="fill: #e2e5e7"
+                  d="M128,0c-17.6,0-32,14.4-32,32v448c0,17.6,14.4,32,32,32h320c17.6,0,32-14.4,32-32V128L352,0H128z"
+                ></path>
+                <path
+                  style="fill: #b0b7bd"
+                  d="M384,128h96L352,0v96C352,113.6,366.4,128,384,128z"
+                ></path>
+                <polygon
+                  style="fill: #cad1d8"
+                  points="480,224 384,128 480,128 "
+                ></polygon>
+                <path
+                  style="fill: #f15642"
+                  d="M416,416c0,8.8-7.2,16-16,16H48c-8.8,0-16-7.2-16-16V256c0-8.8,7.2-16,16-16h352c8.8,0,16,7.2,16,16 V416z"
+                ></path>
+                <g>
+                  <path
+                    style="fill: #ffffff"
+                    d="M98.128,314.672c2.944-24.832,40.416-29.296,58.064-15.728c8.704,7.024-0.496,18.16-8.192,12.528 c-9.456-6-30.96-8.816-33.648,4.464c-3.456,20.992,52.208,8.976,51.296,43.008c-0.896,32.496-47.968,33.248-65.632,18.672 c-4.224-3.456-4.096-9.072-1.776-12.544c3.312-3.312,7.024-4.464,11.376-0.88c10.496,7.152,37.488,12.528,39.408-5.648 C147.376,339.632,94.16,351.008,98.128,314.672z"
+                  ></path>
+                  <path
+                    style="fill: #ffffff"
+                    d="M265.488,369.424l2.048,2.416c8.432,7.68-2.56,20.224-11.136,12.16l-4.336-3.44 c-6.656,4.592-14.448,6.784-24.816,6.784c-22.512,0-48.24-15.504-48.24-46.976s25.584-47.456,48.24-47.456 c23.776,0,47.072,15.984,47.072,47.456C274.32,352.528,271.232,361.504,265.488,369.424z M257.792,340.368 c0-20.336-15.984-30.688-30.56-30.688c-15.728,0-31.216,10.336-31.216,30.688c0,15.504,13.168,30.208,31.216,30.208 c4.592,0,9.072-1.152,13.552-2.304l-14.576-13.44c-6.784-8.192,3.968-19.84,12.528-12.288l14.464,14.448 C256.384,352.528,257.792,347.024,257.792,340.368z"
+                  ></path>
+                  <path
+                    style="fill: #ffffff"
+                    d="M293.168,303.152c0-4.224,3.584-7.808,8.064-7.808c4.096,0,7.552,3.6,7.552,7.808v64.096h34.8 c12.528,0,12.8,16.752,0,16.752h-42.336c-4.48,0-8.064-3.184-8.064-7.792v-73.056H293.168z"
+                  ></path>
+                </g>
+                <path
+                  style="fill: #cad1d8"
+                  d="M400,432H96v16h304c8.8,0,16-7.2,16-16v-16C416,424.8,408.8,432,400,432z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <div class="tool-content">
+            <span class="one">MySQLi</span>
+            <span class="two">Database</span>
+          </div>
+        </div>
+
+        <div class="tool-card glass-panel hidden">
+          <div class="tool-img">
+            <svg
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M16 16C16 13.7909 17.7909 12 20 12C22.2091 12 24 13.7909 24 16C24 18.2091 22.2091 20 20 20C17.7909 20 16 18.2091 16 16Z"
+                  fill="#1ABCFE"
+                ></path>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M8 24C8 21.7909 9.79086 20 12 20H16V24C16 26.2091 14.2091 28 12 28C9.79086 28 8 26.2091 8 24Z"
+                  fill="#0ACF83"
+                ></path>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M16 4V12H20C22.2091 12 24 10.2091 24 8C24 5.79086 22.2091 4 20 4H16Z"
+                  fill="#FF7262"
+                ></path>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M8 8C8 10.2091 9.79086 12 12 12H16V4H12C9.79086 4 8 5.79086 8 8Z"
+                  fill="#F24E1E"
+                ></path>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M8 16C8 18.2091 9.79086 20 12 20H16V12H12C9.79086 12 8 13.7909 8 16Z"
+                  fill="#A259FF"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <div class="tool-content">
+            <span class="one">Figma</span>
+            <span class="two">Design Tool</span>
+          </div>
+        </div>
+        <div class="tool-card glass-panel hidden">
+          <div class="tool-img">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              aria-label="Sass"
+              role="img"
+              viewBox="0 0 512 512"
+              fill="#000000"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <rect width="512" height="512" rx="15%" fill="#c69"></rect>
+                <path
+                  d="M258,88c-96,33-158,100-152,140s66,72,93,93h0c-35,18-79,45-78,80,2,48,54,33,76,19s44-53,30-94c31-8,58,2,66,8,31,22,15,47,4,51s-4,6,3,4,22-12,22-29c0-43-46-63-103-48-33-35-78-51-76-89,1-14,6-50,95-95s152-27,144,14c-12,62-120,104-158,68-2-4-9-7-5,4,20,50,182,27,189-79C410,79,329,64,258,88ZM172,408c-25,8-24-8-23-14,3-17,17-38,59-59C220,373,193,402,172,408Z"
+                  fill="#ffffff"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <div class="tool-content">
+            <span class="one">Sass CSS</span>
+            <span class="two">User Interface</span>
+          </div>
+        </div>
+        <div class="tool-card glass-panel hidden">
+          <div class="tool-img">
+            <svg
+              viewBox="0 -61 256 256"
+              xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="xMinYMin meet"
+              fill="#000000"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <g fill-rule="evenodd">
+                  <ellipse
+                    fill="#8993BE"
+                    cx="128"
+                    cy="66.63"
+                    rx="128"
+                    ry="66.63"
+                  ></ellipse>
+                  <path
+                    d="M35.945 106.082l14.028-71.014H82.41c14.027.877 21.041 7.89 21.041 20.165 0 21.041-16.657 33.315-31.562 32.438H56.11l-3.507 18.411H35.945zm23.671-31.561L64 48.219h11.397c6.137 0 10.52 2.63 10.52 7.89-.876 14.905-7.89 17.535-15.78 18.412h-10.52zM100.192 87.671l14.027-71.013h16.658l-3.507 18.41h15.78c14.028.877 19.288 7.89 17.535 16.658l-6.137 35.945h-17.534l6.137-32.438c.876-4.384.876-7.014-5.26-7.014H124.74l-7.89 39.452h-16.658zM153.425 106.082l14.027-71.014h32.438c14.028.877 21.042 7.89 21.042 20.165 0 21.041-16.658 33.315-31.562 32.438h-15.781l-3.507 18.411h-16.657zm23.67-31.561l4.384-26.302h11.398c6.137 0 10.52 2.63 10.52 7.89-.876 14.905-7.89 17.535-15.78 18.412h-10.521z"
+                    fill="#232531"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <div class="tool-content">
+            <span class="one">PHP</span>
+            <span class="two">Backend</span>
+          </div>
+        </div>
+      </div>
+          <a href="./about-me.html" class="more-about-me">More about me.</a>
+
+    </section>
+
     <!-- ==================== PROJECTS SECTION ==================== -->
     <section id="projects">
       <div class="container">
         <div class="section-header">
-          <h2>Featured Projects</h2>
-          <p>
-            A selection of my recent work showcasing different technologies and
-            approaches
-          </p>
+          <h2 class="comp-header hidden">Projects.</h2>
+          <div class="project-desc hidden">
+            Here’s a look at some of my featured projects, a collection of work
+            that showcases my technical range and creative approach to
+            problem-solving.
+          </div>
         </div>
 
         <div class="projects-grid">
           <!-- PROJECT 1 -->
-          <a href="project.html?id=0" class="project-card-link">
+          <a href="project.html?id=0" class="project-card-link hidden">
             <div class="project-card glass-panel" data-project="0">
               <img src="pic/Screenshot-10.png" alt="Food Delivery Platform" />
               <div class="project-data">
@@ -160,7 +645,7 @@
           </a>
 
           <!-- PROJECT 2 -->
-          <a href="project.html?id=1" class="project-card-link">
+          <a href="project.html?id=1" class="project-card-link hidden">
             <div class="project-card glass-panel" data-project="1">
               <img src="pic/Screenshot-13.png" alt="Wedding Website Template" />
               <div class="project-data">
@@ -179,7 +664,7 @@
           </a>
 
           <!-- PROJECT 3 -->
-          <a href="project.html?id=2" class="project-card-link">
+          <a href="project.html?id=2" class="project-card-link hidden">
             <div class="project-card glass-panel" data-project="2">
               <img src="pic/Screenshot-11.png" alt="Admin Dashboard" />
               <div class="project-data">
@@ -197,7 +682,7 @@
             </div>
           </a>
 
-          <!-- PROJECT 4 -->
+          <!-- PROJECT 4
           <a href="project.html?id=3" class="project-card-link">
             <div class="project-card glass-panel" data-project="3">
               <img src="pic/Screenshot-12.png" alt="News Update Template" />
@@ -217,7 +702,7 @@
             </div>
           </a>
 
-          <!-- PROJECT 5 -->
+          PROJECT 5
           <a href="project.html?id=4" class="project-card-link">
             <div class="project-card glass-panel" data-project="4">
               <img src="pic/Screenshot-14.png" alt="Food Ordering Platform" />
@@ -234,10 +719,10 @@
                 </div>
               </div>
             </div>
-          </a>
+          </a> -->
 
           <!-- PROJECT 6 -->
-          <a href="project.html?id=5" class="project-card-link">
+          <!-- <a href="project.html?id=5" class="project-card-link">
             <div class="project-card glass-panel" data-project="5">
               <img src="pic/Screenshot-15.png" alt="The Solar System" />
               <div class="project-data">
@@ -253,7 +738,7 @@
                 </div>
               </div>
             </div>
-          </a>
+          </a> -->
         </div>
       </div>
     </section>
@@ -261,18 +746,28 @@
     <!-- ==================== CERTIFICATES SECTION ==================== -->
     <section id="certificates">
       <div class="container">
-        <div class="section-header">
-          <h2>Certificates & Achievements</h2>
-          <p>
-            A showcase of my professional certifications and learning milestones
+        <div class="">
+          <h2 class="comp-header hidden">Certificates.</h2>
+          <p
+            class="project-desl hidden"
+            style="
+              margin-top: 1em;
+              margin-bottom: 3em;
+              font-size: 1.2em;
+              color: var(--muted);
+            "
+          >
+            These certifications reflect my commitment to continuous learning
+            and staying up-to-date with industry standards. They showcase my
+            expertise in key technologies and best practices.
           </p>
         </div>
 
         <div class="certificates-grid">
           <!-- CERTIFICATE 1 -->
-          <div class="certificate-card glass-panel">
+          <div class="certificate-card glass-panel hidden">
             <img
-              src="pic/8k-background-8ouj14dy27rdjdvf.jpg"
+              src="pic/Screenshot_20251113-200831.jpg"
               alt="Frontend Development Certificate"
               class="certificate-img"
             />
@@ -281,7 +776,7 @@
           </div>
 
           <!-- CERTIFICATE 2 -->
-          <div class="certificate-card glass-panel">
+          <div class="certificate-card glass-panel hidden">
             <img
               src="pic/Python-for-beginners-cert.jpeg"
               alt="Backend Development Certificate"
@@ -292,7 +787,7 @@
           </div>
 
           <!-- CERTIFICATE 3 -->
-          <div class="certificate-card glass-panel">
+          <!-- <div class="certificate-card glass-panel hidden">
             <img
               src="pic/8k-minimalist-0l0ayss0kvg62rs1.jpg"
               alt="Database Design Certificate"
@@ -300,7 +795,7 @@
             />
             <h3>Database Design</h3>
             <p>Certified by Oracle Academy</p>
-          </div>
+          </div> -->
         </div>
       </div>
 
@@ -311,130 +806,17 @@
       </div>
     </section>
 
-    <!-- ==================== SKILLS SECTION ==================== -->
-    <section id="skills">
-      <div class="container">
-        <div class="section-header">
-          <h2>Skills & Expertise</h2>
-          <p>Technologies and tools I work with to bring ideas to life</p>
-        </div>
-        <div class="skills-grid">
-          <!-- SKILLS DATA: Update these categories and items -->
-
-          <div class="skill-category glass-panel">
-            <h3>Frontend</h3>
-            <div class="skill-list">
-              <div class="skill-item">
-                <span>React</span>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="90"></div>
-                </div>
-                <span>90%</span>
-              </div>
-              <div class="skill-item">
-                <span>TypeScript</span>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="85"></div>
-                </div>
-                <span>85%</span>
-              </div>
-              <div class="skill-item">
-                <span>CSS/Sass</span>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="95"></div>
-                </div>
-                <span>95%</span>
-              </div>
-              <div class="skill-item">
-                <span>Next.js</span>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="80"></div>
-                </div>
-                <span>80%</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="skill-category glass-panel">
-            <h3>Backend</h3>
-            <div class="skill-list">
-              <div class="skill-item">
-                <span>Node.js</span>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="85"></div>
-                </div>
-                <span>85%</span>
-              </div>
-              <div class="skill-item">
-                <span>Python</span>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="80"></div>
-                </div>
-                <span>80%</span>
-              </div>
-              <div class="skill-item">
-                <span>MySQLi</span>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="95"></div>
-                </div>
-                <span>95%</span>
-              </div>
-              <div class="skill-item">
-                <span>REST APIs</span>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="90"></div>
-                </div>
-                <span>90%</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="skill-category glass-panel">
-            <h3>Tools & Other</h3>
-            <div class="skill-list">
-              <div class="skill-item">
-                <span>Git</span>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="90"></div>
-                </div>
-                <span>90%</span>
-              </div>
-              <div class="skill-item">
-                <span>Docker</span>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="75"></div>
-                </div>
-                <span>75%</span>
-              </div>
-              <div class="skill-item">
-                <span>Node</span>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="70"></div>
-                </div>
-                <span>70%</span>
-              </div>
-              <div class="skill-item">
-                <span>Figma</span>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="85"></div>
-                </div>
-                <span>85%</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- ==================== CONTACT SECTION ==================== -->
     <section id="contact">
       <div class="container">
-        <div class="section-header">
-          <h2>Get In Touch</h2>
-          <p>Let's discuss your next project or just say hello</p>
-        </div>
         <div class="contact-wrapper">
-          <div class="contact-info">
+          <div class="contact-info hidden">
+            <div class="comp-header" style="margin-bottom: 1em">
+              <h2>Get In Touch.</h2>
+              <p style="font-size: large; font-weight: normal">
+                Let's discuss your next project or just say hello.
+              </p>
+            </div>
             <div class="contact-item">
               <div class="contact-icon">
                 <svg
@@ -489,18 +871,137 @@
             <div class="contact-item">
               <div class="contact-icon">
                 <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
+                  viewBox="0 0 16 16"
+                  xmlns="http://www.w3.org/2000/svg"
                   fill="none"
-                  stroke="white"
-                  stroke-width="2"
                 >
-                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                  <path
-                    d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
-                  ></path>
-                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      fill="#0A66C2"
+                      d="M12.225 12.225h-1.778V9.44c0-.664-.012-1.519-.925-1.519-.926 0-1.068.724-1.068 1.47v2.834H6.676V6.498h1.707v.783h.024c.348-.594.996-.95 1.684-.925 1.802 0 2.135 1.185 2.135 2.728l-.001 3.14zM4.67 5.715a1.037 1.037 0 01-1.032-1.031c0-.566.466-1.032 1.032-1.032.566 0 1.031.466 1.032 1.032 0 .566-.466 1.032-1.032 1.032zm.889 6.51h-1.78V6.498h1.78v5.727zM13.11 2H2.885A.88.88 0 002 2.866v10.268a.88.88 0 00.885.866h10.226a.882.882 0 00.889-.866V2.865a.88.88 0 00-.889-.864z"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <a
+                href="https://www.linkedin.com/in/melvin-akan-bassey-458873300/"
+                target="_blank"
+              >
+                <div>
+                  <h4>Social</h4>
+                  <p>LinkedIn</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <rect
+                      x="2"
+                      y="2"
+                      width="28"
+                      height="28"
+                      rx="6"
+                      fill="url(#paint0_radial_87_7153)"
+                    ></rect>
+                    <rect
+                      x="2"
+                      y="2"
+                      width="28"
+                      height="28"
+                      rx="6"
+                      fill="url(#paint1_radial_87_7153)"
+                    ></rect>
+                    <rect
+                      x="2"
+                      y="2"
+                      width="28"
+                      height="28"
+                      rx="6"
+                      fill="url(#paint2_radial_87_7153)"
+                    ></rect>
+                    <path
+                      d="M23 10.5C23 11.3284 22.3284 12 21.5 12C20.6716 12 20 11.3284 20 10.5C20 9.67157 20.6716 9 21.5 9C22.3284 9 23 9.67157 23 10.5Z"
+                      fill="white"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M16 21C18.7614 21 21 18.7614 21 16C21 13.2386 18.7614 11 16 11C13.2386 11 11 13.2386 11 16C11 18.7614 13.2386 21 16 21ZM16 19C17.6569 19 19 17.6569 19 16C19 14.3431 17.6569 13 16 13C14.3431 13 13 14.3431 13 16C13 17.6569 14.3431 19 16 19Z"
+                      fill="white"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M6 15.6C6 12.2397 6 10.5595 6.65396 9.27606C7.2292 8.14708 8.14708 7.2292 9.27606 6.65396C10.5595 6 12.2397 6 15.6 6H16.4C19.7603 6 21.4405 6 22.7239 6.65396C23.8529 7.2292 24.7708 8.14708 25.346 9.27606C26 10.5595 26 12.2397 26 15.6V16.4C26 19.7603 26 21.4405 25.346 22.7239C24.7708 23.8529 23.8529 24.7708 22.7239 25.346C21.4405 26 19.7603 26 16.4 26H15.6C12.2397 26 10.5595 26 9.27606 25.346C8.14708 24.7708 7.2292 23.8529 6.65396 22.7239C6 21.4405 6 19.7603 6 16.4V15.6ZM15.6 8H16.4C18.1132 8 19.2777 8.00156 20.1779 8.0751C21.0548 8.14674 21.5032 8.27659 21.816 8.43597C22.5686 8.81947 23.1805 9.43139 23.564 10.184C23.7234 10.4968 23.8533 10.9452 23.9249 11.8221C23.9984 12.7223 24 13.8868 24 15.6V16.4C24 18.1132 23.9984 19.2777 23.9249 20.1779C23.8533 21.0548 23.7234 21.5032 23.564 21.816C23.1805 22.5686 22.5686 23.1805 21.816 23.564C21.5032 23.7234 21.0548 23.8533 20.1779 23.9249C19.2777 23.9984 18.1132 24 16.4 24H15.6C13.8868 24 12.7223 23.9984 11.8221 23.9249C10.9452 23.8533 10.4968 23.7234 10.184 23.564C9.43139 23.1805 8.81947 22.5686 8.43597 21.816C8.27659 21.5032 8.14674 21.0548 8.0751 20.1779C8.00156 19.2777 8 18.1132 8 16.4V15.6C8 13.8868 8.00156 12.7223 8.0751 11.8221C8.14674 10.9452 8.27659 10.4968 8.43597 10.184C8.81947 9.43139 9.43139 8.81947 10.184 8.43597C10.4968 8.27659 10.9452 8.14674 11.8221 8.0751C12.7223 8.00156 13.8868 8 15.6 8Z"
+                      fill="white"
+                    ></path>
+                    <defs>
+                      <radialGradient
+                        id="paint0_radial_87_7153"
+                        cx="0"
+                        cy="0"
+                        r="1"
+                        gradientUnits="userSpaceOnUse"
+                        gradientTransform="translate(12 23) rotate(-55.3758) scale(25.5196)"
+                      >
+                        <stop stop-color="#B13589"></stop>
+                        <stop offset="0.79309" stop-color="#C62F94"></stop>
+                        <stop offset="1" stop-color="#8A3AC8"></stop>
+                      </radialGradient>
+                      <radialGradient
+                        id="paint1_radial_87_7153"
+                        cx="0"
+                        cy="0"
+                        r="1"
+                        gradientUnits="userSpaceOnUse"
+                        gradientTransform="translate(11 31) rotate(-65.1363) scale(22.5942)"
+                      >
+                        <stop stop-color="#E0E8B7"></stop>
+                        <stop offset="0.444662" stop-color="#FB8A2E"></stop>
+                        <stop offset="0.71474" stop-color="#E2425C"></stop>
+                        <stop
+                          offset="1"
+                          stop-color="#E2425C"
+                          stop-opacity="0"
+                        ></stop>
+                      </radialGradient>
+                      <radialGradient
+                        id="paint2_radial_87_7153"
+                        cx="0"
+                        cy="0"
+                        r="1"
+                        gradientUnits="userSpaceOnUse"
+                        gradientTransform="translate(0.500002 3) rotate(-8.1301) scale(38.8909 8.31836)"
+                      >
+                        <stop offset="0.156701" stop-color="#406ADC"></stop>
+                        <stop offset="0.467799" stop-color="#6A45BE"></stop>
+                        <stop
+                          offset="1"
+                          stop-color="#6A45BE"
+                          stop-opacity="0"
+                        ></stop>
+                      </radialGradient>
+                    </defs>
+                  </g>
                 </svg>
               </div>
               <a href="https://www.instagram.com/heeismelvin/">
@@ -512,7 +1013,7 @@
             </div>
           </div>
 
-          <form class="contact-form" id="contactForm" novalidate>
+          <form class="contact-form hidden" id="contactForm" novalidate>
             <div class="form-group">
               <label for="name">Name *</label>
               <input
@@ -561,7 +1062,7 @@
     <!-- ==================== FOOTER ==================== -->
     <footer role="contentinfo">
       <div class="container">
-        <p>&copy; <span id="currentYear"></span>. All rights reserved.</p>
+        <p>&copy; <span id="currentYear"></span>. All Rights Reserved.</p>
         <ul class="social-links">
           <li>
             <a

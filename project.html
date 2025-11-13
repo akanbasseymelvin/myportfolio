@@ -24,7 +24,7 @@
 
         <!-- Navigation Links -->
         <ul class="nav-links" id="navLinks">
-          <li><a href="./#projects">← Back to Projects</a></li>
+          <li><a href="./">← Back to Home</a></li>
         </ul>
 
         <div class="overlay" id="overlay"></div>
@@ -56,7 +56,7 @@
     </a>
 
     <!-- ==================== PROJECT DETAILS SECTION ==================== -->
-    <section id="project-details">
+    <section id="project-details" class="hidden">
       <div class="container" id="projectContainer">
         <!-- Dynamic project content loads here -->
       </div>
@@ -121,17 +121,9 @@
 
     <!-- ==================== SCRIPTS ==================== -->
     <script src="projects.js"></script>
+    <script src="script.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", () => {
-        // === MOBILE NAV TOGGLE ===
-        const hamburger = document.querySelector(".hamburger");
-        const navLinks = document.querySelector(".nav-links");
-        if (hamburger && navLinks) {
-          hamburger.addEventListener("click", () => {
-            hamburger.classList.toggle("active");
-            navLinks.classList.toggle("active");
-          });
-        }
 
         // === AUTO UPDATE YEAR ===
         const yearEl = document.getElementById("currentYear");
@@ -181,8 +173,8 @@
           .join("");
 
         container.innerHTML = `
-          <div class="section-header" style="margin-top: 7rem;">
-            <h2>${project.title}</h2>
+          <div class="section-header project-header-page" style="margin-top: 7rem;">
+            <h2>${project.title}.</h2>
             <p>${project.subtitle || ""}</p>
           </div>
 

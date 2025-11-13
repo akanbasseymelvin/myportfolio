@@ -8,6 +8,33 @@ document.addEventListener("DOMContentLoaded", () => {
     taglines[i].classList.add("active");
   }, 3000); // change every 2.5s
 });
+// --- Hero Animation on Load ---
+const heroElement = document.getElementById("hero");
+
+// Animate hero once on page load
+window.addEventListener("load", () => {
+  heroElement.classList.add("show");
+});
+
+// --- Scroll-Triggered Animations ---
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+      // Stop observing once shown (prevents reanimation on scroll-up)
+      observer.unobserve(entry.target);
+    }
+  });
+});
+
+// Observe all .hidden elements except the hero
+const scrollHiddenElements = document.querySelectorAll(".hidden");
+scrollHiddenElements.forEach((el) => {
+  if (el !== heroElement) {
+    observer.observe(el);
+  }
+});
+
 
 const hamburger = document.getElementById("hamburger");
 const navLinks = document.getElementById("navLinks");
